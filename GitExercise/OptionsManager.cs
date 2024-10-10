@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO.IsolatedStorage;
+using System.Reflection.Metadata.Ecma335;
 
 namespace GitExercise
 {
@@ -7,7 +9,11 @@ namespace GitExercise
         public static string[] OptionsList = {
             "a - Add",
             "s - Subtract",
-            "m - Multiply"
+            "m - Multiply",
+                "pow - Power",
+                "log - Logaritham",
+                "fact - Sum of 2 factorials"
+
         };
 
         public static void Add(double a, double b)
@@ -23,6 +29,16 @@ namespace GitExercise
         public static void Subtract(double a, double b)
         {
             Console.WriteLine($"{a} - {b} = {a - b}");
+        }
+        private static long CalculateFact(int a)
+        {
+            long result = a;
+            for (int i = a - 1 ; i >= 1; i--)
+            {
+                result= result *i;
+
+            }
+            return result;
         }
     }
 }
