@@ -7,7 +7,9 @@ namespace GitExercise
         public static string[] OptionsList = {
             "a - Add",
             "s - Subtract",
-            "m - Multiply"
+            "m - Multiply",
+            "dr - Divide Manager",
+            "ex - Exit"
         };
 
         public static void Add(double a, double b)
@@ -23,6 +25,11 @@ namespace GitExercise
         public static void Subtract(double a, double b)
         {
             Console.WriteLine($"{a} - {b} = {a - b}");
+        }
+
+        internal static void DivideRemainder(double a, double b)
+        {
+            Console.WriteLine($"{a} % {b} = {a % b}");
         }
     }
 }
