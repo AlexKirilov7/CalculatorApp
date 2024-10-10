@@ -7,6 +7,8 @@ namespace GitExercise
         public static string[] OptionsList = {
             "a - Add",
             "s - Subtract",
+            "dr - Divide Manager",
+            "ex - Exit",
             "m - Multiply",
             "d - Divide",
             "sabs - SubtractAbs"
